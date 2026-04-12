@@ -2,6 +2,25 @@
 
 > A complete, end-to-end machine learning project that predicts whether an employee is at risk of leaving a company — with full model interpretability powered by SHAP.
 
+<a href="https://employee-attrition-predictor-ml.streamlit.app" target="_blank">
+  <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
+</a>
+
+---
+
+## 🌐 Live Demo
+
+> **The app is fully deployed and accessible online — no installation required.**
+
+<a href="https://employee-attrition-predictor-ml.streamlit.app" target="_blank">👉 Click here to open the live app</a>
+
+Input any employee profile using the sidebar and instantly see:
+- The predicted attrition probability and risk classification
+- A SHAP waterfall chart explaining exactly which factors drove that prediction
+- A full model performance dashboard with ROC curves, confusion matrices, and global feature importance charts
+
+> ⚠️ Hosted on Streamlit Community Cloud free tier. If the app has been inactive for several days it may take ~30 seconds to wake up — just press the **"Wake up"** button if prompted.
+
 ---
 
 ## 🖼️ App Preview
@@ -9,8 +28,6 @@
 | Prediction Tab | Model Performance Tab |
 |---|---|
 | ![Prediction](assets/screenshot_prediction.png) | ![Performance](assets/screenshot_performance.png) |
-
-> 🚀 **Run the app locally** — instructions in the [Getting Started](#-getting-started) section below.
 
 ---
 
@@ -166,16 +183,37 @@ Used **SHAP (SHapley Additive exPlanations)** to explain model predictions at bo
 | Imbalance Handling | imbalanced-learn (SMOTE) |
 | Interpretability | shap |
 | Web App | streamlit |
+| Deployment | Streamlit Community Cloud |
 | Environment | Jupyter Notebooks + VS Code |
 | Version Control | Git + GitHub |
 
 ---
 
-## 🚀 Getting Started
+## 🖥️ App Features
 
-### Prerequisites
-- Python 3.8+
-- Git
+The interactive Streamlit app is live at <a href="https://employee-attrition-predictor-ml.streamlit.app" target="_blank">employee-attrition-predictor-ml.streamlit.app</a> and includes three tabs:
+
+**🎯 Prediction Tab**
+- Full employee profile input form in the sidebar (age, role, compensation, satisfaction scores, tenure)
+- Live attrition probability score and risk classification
+- Visual risk gauge
+- SHAP waterfall chart explaining exactly why the model made that specific prediction
+
+**📊 Model Performance Tab**
+- Full model comparison table (all three models, all metrics)
+- Global SHAP summary and bar charts
+- ROC curves and confusion matrices for all models
+
+**📖 About Tab**
+- Project methodology summary
+- Dataset information
+- Technical stack overview
+
+---
+
+## 🚀 Run Locally
+
+If you want to run the project on your own machine:
 
 ### 1. Clone the repository
 ```bash
@@ -203,7 +241,6 @@ pip install -r requirements.txt
 Download `WA_Fn-UseC_-HR-Employee-Attrition.csv` from [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset), rename it to `attrition.csv`, and place it in the `data/` folder.
 
 ### 5. Run the notebooks in order
-Open the `notebooks/` folder in VS Code or Jupyter and run:
 ```
 01_EDA.ipynb
 02_Preprocessing.ipynb
@@ -212,33 +249,10 @@ Open the `notebooks/` folder in VS Code or Jupyter and run:
 05_SHAP_Interpretability.ipynb
 ```
 
-### 6. Launch the Streamlit app
+### 6. Launch the app
 ```bash
 streamlit run app/app.py
 ```
-The app will open automatically at `http://localhost:8501`
-
----
-
-## 🖥️ App Features
-
-The interactive Streamlit app includes three tabs:
-
-**🎯 Prediction Tab**
-- Full employee profile input form in the sidebar (age, role, compensation, satisfaction scores, tenure)
-- Live attrition probability score and risk classification
-- Visual risk gauge
-- SHAP waterfall chart explaining exactly why the model made that specific prediction
-
-**📊 Model Performance Tab**
-- Full model comparison table (all three models, all metrics)
-- Global SHAP summary and bar charts
-- ROC curves and confusion matrices for all models
-
-**📖 About Tab**
-- Project methodology summary
-- Dataset information
-- Technical stack overview
 
 ---
 
@@ -254,6 +268,7 @@ All notebooks are self-contained and run sequentially. Each notebook saves its o
 
 [![GitHub](https://img.shields.io/badge/GitHub-emaadkalantarii-181717?style=flat&logo=github)](https://github.com/emaadkalantarii)
 [![Repository](https://img.shields.io/badge/Project%20Repo-employee--attrition-blue?style=flat&logo=github)](https://github.com/emaadkalantarii/employee-attrition)
+<a href="https://employee-attrition-predictor-ml.streamlit.app" target="_blank"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/></a>
 
 ---
 
