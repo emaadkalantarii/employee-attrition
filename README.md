@@ -1,4 +1,5 @@
 # 👥 Employee Attrition Predictor
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://employee-attrition-predictor-ml.streamlit.app)
 
 > A complete, end-to-end machine learning project that predicts whether an employee is at risk of leaving a company — with full model interpretability powered by SHAP.
 
